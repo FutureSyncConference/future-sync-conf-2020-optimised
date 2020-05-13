@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const $ = require('gulp-load-plugins')();
+const prefix = require('gulp-autoprefixer');
+const rename = require('gulp-rename');
+const cleanCSS = require('gulp-clean-css');
 
 var inDirPath = process.env.CONTEXT ? '/opt/build/repo/_img' : '_img';
 var outDirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img' : 'assets/img';
@@ -72,3 +75,22 @@ gulp.task('header-img', function() {
       .pipe(imagemin())
       .pipe(gulp.dest(`images/backgrounds/`));
   });
+
+
+
+
+// SASS
+gulp.task('sass', function() {
+  let autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 10', 'IE 11'];
+
+  return gulp.src('dist/base5f4b.css')
+    .pipe(prefix({
+      browsers: autoprefixBrowsers,
+      flexbox: true
+    }))
+    .pipe(cleanCSS({
+     level: 2
+    }))
+    .pipe(rename({ basename: 'compiled' }))
+    .pipe(gulp.dest(''));
+});
