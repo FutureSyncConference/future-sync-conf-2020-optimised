@@ -22,14 +22,6 @@ $(document).ready(function () {
         }
     });
 
-    var module = document.getElementsByClassName("clamp-this-module");
-    //$clamp(module, {clamp: 5});
-
-    var len = module.length;
-    for(var i = 0; i < len; i++){
-        $clamp(module[i], {clamp: 5});
-    }
-
     $('#badgeImage').on('load', function() {
         resizeBadge();
     });
