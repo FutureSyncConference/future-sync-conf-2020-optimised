@@ -22,47 +22,4 @@ $(document).ready(function () {
         }
     });
 
-    $('#badgeImage').on('load', function() {
-        resizeBadge();
-    });
-
-    $(window).resize(function() {
-        resizeBadge();
-    });
-
-    $('#badgeGenerateButton').click(function()
-    {
-        grecaptcha.execute('kasuydfglsdygfkausdygfk', {action: 'generate_badge'}).then(function(token) {
-            $.post('/generate-badge.php', {
-                name: $('#name').val(),
-                company: $('#companyName').val(),
-                token: token
-            }, function(imagePath) {
-                if (imagePath) {
-                    window.open(imagePath);
-                }
-                else {
-                    console.log('error generating badge');
-                }
-            });
-        });
-    });
 });
-
-function resizeBadge()
-{
-    let windowWidth = $(window).width();
-
-    let badgeMaxWidth = 500;
-    let badgeScale = Math.min(windowWidth / badgeMaxWidth, 1);
-
-    $('#badgeWrapper').css({
-        '-webkit-transform': 'scale(' + badgeScale + ')',
-        '-moz-transform': 'scale(' + badgeScale + ')',
-        '-ms-transform': 'scale(' + badgeScale + ')',
-        '-o-transform': 'scale(' + badgeScale + ')',
-        'transform': 'scale(' + badgeScale + ')'
-    });
-    
-    $('#badgeWrapper').parent().height(Math.floor($('#badgeWrapper').height()) - 1);
-}
