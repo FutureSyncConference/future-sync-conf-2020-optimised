@@ -1172,51 +1172,51 @@ iframe#origintickets253 #events .container {
 }
 
 .social--twitter:before {
-  background-image: url(../images/social-icons/twitter-icon-purple.svg)
+  background-image: url(images/social-icons/twitter-icon-purple.svg)
 }
 
 .social--twitter:hover:before {
-  background-image: url(../images/social-icons/twitter-icon-white.svg)
+  background-image: url(images/social-icons/twitter-icon-white.svg)
 }
 
 .social--twitter--grey:hover:before {
-  background-image: url(../images/social-icons/twitter-icon-grey.svg)
+  background-image: url(images/social-icons/twitter-icon-grey.svg)
 }
 
 .social--facebook:before {
-  background-image: url(../images/social-icons/facebook-icon-pink-2.svg)
+  background-image: url(images/social-icons/facebook-icon-pink-2.svg)
 }
 
 .social--facebook:hover:before {
-  background-image: url(../images/social-icons/facebook-icon-white-2.svg)
+  background-image: url(images/social-icons/facebook-icon-white-2.svg)
 }
 
 .social--facebook--grey:hover:before {
-  background-image: url(../images/social-icons/facebook-icon-grey-2.svg)
+  background-image: url(images/social-icons/facebook-icon-grey-2.svg)
 }
 
 .social--instagram:before {
-  background-image: url(../images/social-icons/instagram-icon-blue.svg)
+  background-image: url(images/social-icons/instagram-icon-blue.svg)
 }
 
 .social--instagram:hover:before {
-  background-image: url(../images/social-icons/instagram-icon-white.svg)
+  background-image: url(images/social-icons/instagram-icon-white.svg)
 }
 
 .social--instagram--grey:hover:before {
-  background-image: url(../images/social-icons/instagram-icon-grey.svg)
+  background-image: url(images/social-icons/instagram-icon-grey.svg)
 }
 
 .social--youtube:before {
-  background-image: url(../images/social-icons/youtube-icon-pink-2.svg)
+  background-image: url(images/social-icons/youtube-icon-pink-2.svg)
 }
 
 .social--youtube:hover:before {
-  background-image: url(../images/social-icons/youtube-icon-white-2.svg)
+  background-image: url(images/social-icons/youtube-icon-white-2.svg)
 }
 
 .social--youtube--grey:hover:before {
-  background-image: url(../images/social-icons/youtube-icon-grey.svg)
+  background-image: url(images/social-icons/youtube-icon-grey.svg)
 }
 
 .social--linkedin {
@@ -1224,16 +1224,16 @@ iframe#origintickets253 #events .container {
 }
 
 .social--linkedin:before {
-  background-image: url(../images/social-icons/linkedin-icon-purple.svg)
+  background-image: url(images/social-icons/linkedin-icon-purple.svg)
 }
 
 .social--linkedin:hover:before {
-  background-image: url(../images/social-icons/linkedin-icon-white.svg);
+  background-image: url(images/social-icons/linkedin-icon-white.svg);
   opacity: 1
 }
 
 .social--linkedin--grey:hover:before {
-  background-image: url(../images/social-icons/linkedin-icon-grey.svg)
+  background-image: url(images/social-icons/linkedin-icon-grey.svg)
 }
 
 .social--facebook--grey:hover:before,
