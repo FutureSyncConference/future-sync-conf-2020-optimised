@@ -1618,11 +1618,6 @@ footer nav a {
   margin-top: 2em
 }
 
-.menu__list li:last-child {
-  margin-left: 3.125em;
-  margin-top: 1.875em
-}
-
 .menu__list__item {
   width: 100%
 }
